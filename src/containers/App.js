@@ -1,7 +1,7 @@
-import React, {Components, PropTypes} from 'react'
+import React, { Component } from 'react'
 
-export default class App extends Components {
+export default class App extends Component {
   render() {
-    <div>Hello from App!</div>
+    return <div>Привет из App! yoyoyo!! hahah</div>
   }
 }

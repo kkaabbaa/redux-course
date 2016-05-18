@@ -15,15 +15,23 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.HotModuleReplacementPlugin()
   ],
   module: {
+    preLoaders: [ //добавили ESlint в preloaders
+      {
+        test: /\.js$/,
+        loaders: ['eslint'],
+        include: [
+          path.resolve(__dirname, "src")
+        ]
+      }
+    ],
     loaders: [
       { //добавили babel-loader
-        loaders: ['babel-loader'],
+        loaders: ['react-hot', 'babel-loader'],
         include: [
-          path.resolve(__dirname, "src"),
+          path.resolve(__dirname, "src")
         ],
         test: /\.js$/,
         plugins: ['transform-runtime']
