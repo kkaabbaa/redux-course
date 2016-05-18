@@ -21,6 +21,7 @@
     "eslint-loader": "^1.3.0",
     "eslint-plugin-react": "^5.1.1",
     "express": "^4.13.4",
+    "npm-install-webpack-plugin": "^3.1.3",
     "react-hot-loader": "^1.3.0",
     "webpack": "^1.13.0",
     "webpack-dev-middleware": "^1.6.1",
@@ -30,6 +31,8 @@
     "babel-polyfill": "^6.9.0",
     "babel-runtime": "^6.9.0",
     "react": "^15.0.2",
-    "react-dom": "^15.0.2"
+    "react-dom": "^15.0.2",
+    "react-redux": "4.4.5",
+    "redux": "3.5.2"
   }
 }
